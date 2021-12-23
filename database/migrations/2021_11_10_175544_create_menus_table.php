@@ -13,12 +13,13 @@ class CreateMenusTable extends Migration
      */
     public function up()
     {
-        Schema::create('_menus', function (Blueprint $table) {
+        Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->unsignedBigInteger('post_id')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->unsignedBigInteger('comment_id')->nullable();
+            $table->string('is_active');
             $table->timestamps();
         });
     }

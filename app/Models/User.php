@@ -23,14 +23,10 @@ class User extends Authenticatable
      *
      * @var string[]
      */
-    protected $table =['categories'];
+    protected $table ='users';
     protected $guarded=['id'];
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array
-     */
+
     protected $hidden = [
         'password',
         'remember_token',

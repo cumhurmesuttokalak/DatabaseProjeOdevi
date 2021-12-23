@@ -9,6 +9,6 @@ class Menu extends Model
 {
     use HasFactory;
 
-    protected $table =['menus'];
+    protected $table ='menus';
     protected $guarded=['id'];
 }

@@ -9,7 +9,7 @@ class Comment extends Model
 {
     use HasFactory;
 
-    protected $table =['comments'];
+    protected $table ='comments';
     protected $guarded=['id'];
 
 
