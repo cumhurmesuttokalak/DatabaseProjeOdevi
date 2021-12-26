@@ -19,8 +19,8 @@ class CreatePostsTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->string('title');
             $table->string('content');
-            $table->string('slug')->nullable();
-            $table->string('is_active');
+            $table->string('post_face')->nullable();
+            $table->string('is_active')->default(0);
             $table->timestamps();
 
             $table->foreign('author_id')->references('id')->on('users');

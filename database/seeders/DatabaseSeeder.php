@@ -35,7 +35,6 @@ class DatabaseSeeder extends Seeder
             Category::create([
                 'title' => $factory->sentence,
                 'content' => $factory->sentence,
-                'slug' => $factory->slug,
                 'is_active' => 1
             ]);
         }
@@ -46,7 +45,6 @@ class DatabaseSeeder extends Seeder
                 'category_id' => $factory->numberBetween(Category::first()->id, Category::orderByDesc('id')->first()->id),
                 'title' => $factory->sentence,
                 'content' => $factory->sentence,
-                'slug' => $factory->slug,
                 'is_active' => 1
             ]);
 
